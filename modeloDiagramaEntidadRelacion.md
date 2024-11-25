@@ -30,18 +30,23 @@ Los diagramas entidad relación son sencillos y claros, cualidades que pueden se
 ### Tipos de cardinalidad
 
 - *1 a 1:* 
+
 ![cardinalidad1a1](./imagenes/1a1.png)
 
 - *0 a 1 (1 a 1 opcional):*
+
 ![cardinalidad0a1](./imagenes/0a1.png)
 
 - *1 a N:*
+
 ![cardinalidad1aN](./imagenes/1aN.png)
 
 - *0 a N (1 a N opcional):*
+
 ![cardinalidad0aN](./imagenes/0aN.png)
 
 - *N a N:*
+
 ![cardinalidadNaN](./imagenes/NaN.png)
 
 <!-- ### Normalización
