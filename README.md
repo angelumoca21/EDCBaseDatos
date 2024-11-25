@@ -6,7 +6,7 @@
 
 **Temario**
 
-1. [Introducción a base de datos](./introduccionBaseDatos)
+1. [Introducción a base de datos](./introduccionBaseDatos.md)
 2. [Modelo y diagrama entidad-relación (modelo diagrama conceptual)](./modeloDiagramaEntidadRelacion.md)
 2.a [Modelo y diagrama físico]()
 3. [Lenguaje estructurado de consulta (SQL)]()
