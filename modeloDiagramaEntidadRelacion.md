@@ -44,14 +44,23 @@ Los diagramas entidad relación son sencillos y claros, cualidades que pueden se
 - *0 a N (1 a N opcional):*
 
 ![cardinalidad0aN](./imagenes/0aN.png)
+![cardinalidad0aN2](./imagenes/0aN2.png)
 
 - *N a N:*
 
 ![cardinalidadNaN](./imagenes/NaN.png)
 
+## Ejercicio: Realizar el diseño conceptual de un blog donde los usuarios realizan la publicación de posts, además de que pueden interactuar entre ellos comentando sus posts. Cada post creado debe pertenecer a una única categoría.
+
 <!-- ### Normalización
 
+![tablaSinNormalizar](./imagenes/tablaSinNormalizar.png)
+
 - **1FN: Atributos atómicos (sin repetir campos)**
+![1FN](./imagenes/1FN.png)
 - **2FN: Cada campo de la tabla debe depender de una clave única**
+![1FN](./imagenes/2FN.png)
 - **3FN: Los campos que no son clave no deben de tener dependencias**
-- **4FN: Los campos multivaluados se identifican por clave única** -->
+![1FN](./imagenes/3FN.png)
+- **4FN: Los campos multivaluados se identifican por clave única** 
+![1FN](./imagenes/4FN.png)-->
