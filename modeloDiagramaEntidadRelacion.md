@@ -51,8 +51,9 @@ Los diagramas entidad relación son sencillos y claros, cualidades que pueden se
 ![cardinalidadNaN](./imagenes/NaN.png)
 
 ## Ejercicio: Realizar el diseño conceptual de un blog donde los usuarios realizan la publicación de posts, además de que pueden interactuar entre ellos comentando sus posts. Cada post creado debe pertenecer a una única categoría.
+![diagramaConceptualBlog](./imagenes/blogConceptual.png)
 
-<!-- ### Normalización
+## Normalización
 
 ![tablaSinNormalizar](./imagenes/tablaSinNormalizar.png)
 
@@ -63,4 +64,4 @@ Los diagramas entidad relación son sencillos y claros, cualidades que pueden se
 - **3FN: Los campos que no son clave no deben de tener dependencias**
 ![1FN](./imagenes/3FN.png)
 - **4FN: Los campos multivaluados se identifican por clave única** 
-![1FN](./imagenes/4FN.png)-->
+![1FN](./imagenes/4FN.png)

@@ -17,3 +17,5 @@
 - FOREIGN KEY
 - CHECK
 - DEFAULT
+
+## Ejercicio: Realizar el diagrama físico del blog trabajado anteriormente.
