@@ -19,3 +19,5 @@
 - DEFAULT
 
 ## Ejercicio: Realizar el diagrama físico del blog trabajado anteriormente.
+
+![diagramaFisicoBlog](./imagenes/blogFisico.png)
