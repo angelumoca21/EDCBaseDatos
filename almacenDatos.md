@@ -15,7 +15,7 @@ Características del esquema estelar:
 
 El esquema estrella es fácil de entender y proporciona un uso óptimo del disco. Las tablas de dimensiones no están normalizadas.
 
-![diagramaEstrella](/EDCBaseDatos/imagenes/estrella.png)
+![diagramaEstrella](./imagenes/estrella.png)
 
 - **Esquema copo de nieve:** un esquema de copo de nieve es una extensión de un esquema de estrella y agrega dimensiones adicionales. Las tablas de dimensiones están normalizadas, lo que divide los datos en tablas adicionales.
 
@@ -24,8 +24,8 @@ Características del esquema de copo de nieve:
 - Debido a múltiples tablas, el rendimiento de la consulta se reduce.
 - El principal desafío que enfrentará al usar el esquema de copo de nieve es que necesita realizar más esfuerzos de mantenimiento debido a que hay más tablas de búsquedas.
 
-![diagramaCopoNieve](/EDCBaseDatos/imagenes/copoNieve.png)
+![diagramaCopoNieve](./imagenes/copoNieve.png)
 
 - **Esquema Galaxy**: Un esquema Galaxy contiene dos tablas de hechos que comparten tablas de dimensiones. También se llama Fact Constellation Schema. El esquema se ve como una colección de estrellas, de ahí el nombre Galaxy Schema.
 
-![diagramaGalaxy](/EDCBaseDatos/imagenes/galaxy.png)
+![diagramaGalaxy](./imagenes/galaxy.png)
