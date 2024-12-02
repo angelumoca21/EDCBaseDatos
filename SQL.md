@@ -6,24 +6,36 @@ En la década de los 70, en pleno desarrollo de las bases de datos, IBM creaba u
 
 Hoy, todas las empresas manejan una cantidad importante de información, pero la clave está en saber gestionarla. En ese sentido, un experto en SQL en el equipo de trabajo es una garantía, ya sea en el sector de las telecomunicaciones como en la industria de la automoción, la hostelería, la educación, la banca, el marketing... Todos ellos son sectores muy distintos, pero con una misma necesidad: el manejo de las bases de datos. Una base de datos correctamente estructurada es una herramienta enormemente útil con un rendimiento muy alto.
 
-Entonces, ¿quién debe aprender SQL? cualquier persona que trabaje con análisis de datos o tratamiento de información debería tener conocimientos de SQL. La ventaja está en que no es difícil de aprender.SQL permite manejar la información contenida en una base de datos sobre todo su utilidad radica en que facilita la búsqueda y la edición de esos datos. Es una alternativa mucho más eficaz que la manual a la hora de organizar información, algo que hacemos constantemente. 
+Entonces, ¿quién debe aprender SQL? cualquier persona que trabaje con análisis de datos o tratamiento de información debería tener conocimientos de SQL. La ventaja está en que no es difícil de aprender. SQL permite manejar la información contenida en una base de datos sobre todo su utilidad radica en que facilita la búsqueda y la edición de esos datos. Es una alternativa mucho más eficaz que la manual a la hora de organizar información, algo que hacemos constantemente. 
 
 ## Comandos SQL
 
-Los comandos del SQL pueden dividirse en tres grupos:
+Los comandos del SQL pueden dividirse en:
 
-- **Comandos de definición de datos (DDL Data Definition Language):** permiten crear y definir nuevas bases de datos, campos, etc.
+- **Comandos de definición de datos (DDL - Data Definition Language):** permiten crear y definir nuevas bases de datos, campos, etc.
 
-- **Comandos de manipulación de datos (DML Data Manipulation Language):** permite generar consultas para ordenar, filtrar y extraer datos de la base de datos.
+    - CREATE: se utiliza para crear objetos como bases de datos, tablas, vistas, índices, triggers y procedimientos almacenados.
+    - DROP: se utiliza para eliminar los objetos de la base de datos.
+    - ALTER: se utiliza para modificar los objetos de la base de datos.
+    - SHOW: se utiliza para consultar los objetos de la base de datos.
+    - USE: se utiliza para indicar la base de datos con la que queremos trabajar.
+
+- **Comandos de manipulación de datos (DML - Data Manipulation Language):** permite generar consultas para ordenar, filtrar y extraer datos de la base de datos.
 
 - **Comandos de control y seguridad de datos:** gobiernan los privilegios de los usuarios, los controles de acceso.
 
-## Estructura básica de las consultas SQL
+![sqlComandos](./imagenes/sqlComandos.png)
 
+### Creación de base de datos
+
+`CREATE DATABASE nombre_baseDatos;`
+
+<!--## Estructura básica de las consultas SQL
 La estructura básica de una expresión SQL consta de tres cláusulas: select, from y where. Las consultas habituales de SQL tienen la forma: 
 
 ```
 SELECT a1, a2, ..., an
 FROM r1, r2, ..., rm
 WHERE p
-```
+```-->
+
