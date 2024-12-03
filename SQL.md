@@ -26,7 +26,7 @@ Los comandos del SQL pueden dividirse en:
 
 ![sqlComandos](./imagenes/sqlComandos.png)
 
-### CREATE
+### DDL
 
 #### Creación de base de datos (schema)
 
@@ -63,9 +63,32 @@ CREATE TABLE nombre_tabla(
 
 `ALTER TABLE nombre_tabla DROP COLUMN nombre_atributo;`
 
+#### Agregar relaciones entre tablas
+
+```
+ALTER TABLE nombreTabla
+ADD CONSTRAINT nombreRestriccion
+FOREIGNKEY (atributoTabla) REFERENCES
+nombreTablaRelacionar(atributoRelacionar);
+```
+
+### DDL
+
 #### Agregar registros a la tablas
+
 `INSERT INTO nombre_tabla(atributo1,atributo2,...,atributoN) VALUES(valor1,valor2,...,valorN);`
 
+#### Edición de registros
+
+`UPDATE nombre_tabla SET (atributo1=valor1,atributo2=valor2,...,atributoN=valorN) WHERE condicion;`
+
+#### Eliminación de registros
+
+`DELETE FROM nombre_tabla WHERE condicion;`
+
+#### Consulta de registros
+
+`SELECT (*) (atributo1, atributo2) FROM nombre_tabla [WHERE condicion];`
 
 <!--## Estructura básica de las consultas SQL
 La estructura básica de una expresión SQL consta de tres cláusulas: select, from y where. Las consultas habituales de SQL tienen la forma: 
