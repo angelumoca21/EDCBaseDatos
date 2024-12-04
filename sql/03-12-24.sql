@@ -1,32 +1,13 @@
--- Creación de base de datos o schema
 CREATE DATABASE blog;
-CREATE SCHEMA blog;
 
--- Especificar sobre que base de datos se trabajara
 USE blog;
 
--- Creación de tabla
 CREATE TABLE usuario(
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     correoElectronico VARCHAR(30) NOT NULL UNIQUE,
     contrasena VARCHAR(40) NOT NULL,
     username VARCHAR(20) NOT NULL UNIQUE   
 );
-
-DESCRIBE usuario;
-
--- Eliminación de base de datos o schema
-DROP DATABASE blog;
-
--- Agregar una columna (atributo)
-ALTER TABLE usuario ADD telefono CHAR(10) UNIQUE NULL;
-
--- Eliminar una columna (atributo)
-ALTER TABLE usuario DROP COLUMN telefono;
-
--- Modificando restriciones de columnas 
-ALTER TABLE usuario
-CHANGE COLUMN id id INT NOT NULL AUTO_INCREMENT;
 
 -- Agregando tablas restantes de blog
 
@@ -39,31 +20,35 @@ CREATE TABLE comentario(
 );
 
 CREATE TABLE categoria(
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(40) NOT NULL  
 );
 
 CREATE TABLE post(
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     fecha DATETIME,
     titulo VARCHAR(40) NOT NULL,
     contenido TEXT NOT NULL,
     multimedia BOOL NULL,
     estatus CHAR(8) CHECK(estatus IN("activo","inactivo")),
-	id_usuario INT NOT NULL,
+    id_usuario INT NOT NULL,
     id_categoria INT NOT NULL
 );
 
 CREATE TABLE post_etiqueta(
-	id INT PRIMARY KEY,
-	id_etiqueta INT NOT NULL,
-    id_post INT NOT NULL
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	id_post INT NOT NULL,
+    id_etiqueta INT NOT NULL
 );
 
 CREATE TABLE etiqueta(
-	id INT PRIMARY KEY,
+	id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(40) NOT NULL
 );
+
+-- Modificando restricciones de columnas 
+ALTER TABLE usuario
+CHANGE COLUMN id id INT NOT NULL AUTO_INCREMENT;
 
 -- Creando relaciones
 

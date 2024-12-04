@@ -68,11 +68,11 @@ CREATE TABLE nombre_tabla(
 ```
 ALTER TABLE nombreTabla
 ADD CONSTRAINT nombreRestriccion
-FOREIGNKEY (atributoTabla) REFERENCES
+FOREIGN KEY (atributoTabla) REFERENCES
 nombreTablaRelacionar(atributoRelacionar);
 ```
 
-### DDL
+### DML
 
 #### Agregar registros a la tablas
 
@@ -90,12 +90,8 @@ nombreTablaRelacionar(atributoRelacionar);
 
 `SELECT (*) (atributo1, atributo2) FROM nombre_tabla [WHERE condicion];`
 
-<!--## Estructura básica de las consultas SQL
-La estructura básica de una expresión SQL consta de tres cláusulas: select, from y where. Las consultas habituales de SQL tienen la forma: 
+##### COUNT
 
-```
-SELECT a1, a2, ..., an
-FROM r1, r2, ..., rm
-WHERE p
-```-->
+`SELECT COUNT(*) FROM tabla;`
 
+#### JOIN
