@@ -12,7 +12,7 @@
 3. [Lenguaje estructurado de consulta (SQL)](./SQL.md)
 4. [Almacén de datos](./almacenDatos.md)
 5. [Software de diseño de base de datos](./softwareDisenoBD.md) 
-6. [Funciones en SQL]()
+6. [Funciones en SQL](./funciones.md)
 7. [Triggers en SQL]()
 6. [Consultas en SQL]()
 

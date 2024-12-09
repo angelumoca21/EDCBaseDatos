@@ -89,9 +89,3 @@ nombreTablaRelacionar(atributoRelacionar);
 #### Consulta de registros
 
 `SELECT (*) (atributo1, atributo2) FROM nombre_tabla [WHERE condicion];`
-
-##### COUNT
-
-`SELECT COUNT(*) FROM tabla;`
-
-#### JOIN
