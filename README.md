@@ -17,5 +17,3 @@
 6. [Consultas en SQL]()
 
 [**Link a moodle**](https://educacion.pilares.cdmx.gob.mx/)
-
-[DatosBlog](https://docs.google.com/spreadsheets/d/11gIrGZhvYpRRD5e5WG5ravHxvdZp2NDFxXgvSPoaEls/edit?usp=sharing)
