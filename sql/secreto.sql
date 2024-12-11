@@ -40,6 +40,20 @@ VALUES("Disco Duro SATA3 1TB",86.99,5),
 
 SELECT COUNT(*) FROM producto;
 
-SELECT precio, COUNT(*) AS productos
-FROM producto
-GROUP BY precio;
+SELECT fabricante.nombre AS "Nombre del fabricante", COUNT(producto.codigo_fabricante) AS "Numero de productos"
+FROM fabricante
+LEFT JOIN producto ON fabricante.codigo = producto.codigo_fabricante
+GROUP BY fabricante.codigo
+ORDER BY 2 DESC;
+
+SELECT fabricante.nombre, MAX(producto.precio), MIN(producto.precio), AVG(producto.precio)
+FROM fabricante
+INNER JOIN producto ON fabricante.codigo = producto.codigo_fabricante
+GROUP BY fabricante.nombre;
+
+SELECT fabricante.nombre, MAX(producto.precio), MIN(producto.precio), AVG(producto.precio), COUNT(producto.codigo_fabricante)
+FROM fabricante
+INNER JOIN producto ON fabricante.codigo = producto.codigo_fabricante
+GROUP BY fabricante.nombre
+HAVING AVG(producto.precio) > 200;
+-- https://www.ibm.com/docs/es/i/7.5?topic=statement-having-clause
