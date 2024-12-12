@@ -57,3 +57,21 @@ INNER JOIN producto ON fabricante.codigo = producto.codigo_fabricante
 GROUP BY fabricante.nombre
 HAVING AVG(producto.precio) > 200;
 -- https://www.ibm.com/docs/es/i/7.5?topic=statement-having-clause
+
+SELECT nombre FROM producto;
+SELECT nombre,precio FROM producto;
+SELECT * FROM producto;
+SELECT producto.nombre AS "Nombre de producto", producto.precio AS "Precio", fabricante.nombre AS "Fabricante" FROM producto
+INNER JOIN fabricante ON producto.codigo_fabricante=fabricante.codigo;
+SELECT producto.nombre FROM producto
+WHERE codigo_fabricante=(SELECT codigo FROM fabricante WHERE fabricante.nombre="Lenovo");
+SELECT * FROM producto
+WHERE producto.precio=(SELECT MAX(precio) FROM producto WHERE codigo_fabricante=(SELECT codigo FROM fabricante WHERE fabricante.nombre="Lenovo"));
+
+SELECT producto.nombre FROM producto 
+INNER JOIN fabricante
+ON fabricante.codigo = producto.codigo_fabricante
+WHERE fabricante.nombre = 'Lenovo'
+AND producto.precio = (SELECT MAX(precio) FROM producto
+INNER JOIN fabricante ON fabricante.codigo = producto.codigo_fabricante
+WHERE fabricante.nombre = 'Lenovo');
