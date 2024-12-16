@@ -13,7 +13,7 @@
 4. [Almacén de datos](./almacenDatos.md)
 5. [Software de diseño de base de datos](./softwareDisenoBD.md) 
 6. [Funciones en SQL](./funciones.md)
-7. [Triggers en SQL]()
+7. [Triggers en SQL](./triggers.md)
 6. [Consultas en SQL](./consultasSQL.md)
 
 [**Link a moodle**](https://educacion.pilares.cdmx.gob.mx/)
